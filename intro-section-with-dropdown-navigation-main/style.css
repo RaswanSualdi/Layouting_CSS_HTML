@@ -1,0 +1,387 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
+
+body {
+	font-family: 'Overpass', sans-serif;
+	background-color: hsl(0, 0%, 98%);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+/* HEADER CSS */
+
+
+.header {
+	display: flex;
+	background-color: hsl(0, 0%, 98%);
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	padding: 10px;
+	align-items: center;
+	justify-content: space-between;
+
+
+
+}
+
+.header .menu {
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.header .menu  li a {
+	margin-right: 30px;
+	color: hsl(0, 0%, 41%);
+}
+
+.header .menu  li a:hover {
+	color: black;
+}
+
+
+#drpdown1 a {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#drpdown1 {
+	display: none;
+	z-index: 1;
+	position: absolute;
+	padding: 10px;
+	margin-left: -70px;
+	margin-top: 20px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #ccc;
+
+}
+
+#drpdown2 a {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#drpdown2 {
+	display: none;
+	z-index: 1;
+	position: absolute;
+	padding: 10px;
+	/* margin-left: -70px; */
+	margin-top: 20px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #ccc;
+
+}
+
+
+
+
+
+
+
+#todolist::before {
+	content: url('images/icon-todo.svg');
+	margin-right: 5px;
+}
+
+#calender::before {
+	content: url('images/icon-calendar.svg');
+	margin-right: 5px;
+}
+
+#reminders::before {
+	content: url('images/icon-reminders.svg');
+	margin-right: 5px;
+}
+
+#planning::before {
+	content: url('images/icon-planning.svg');
+	margin-right: 5px;
+}
+
+.header .auth {
+	margin-right: 50px;
+	display: flex;
+
+
+}
+
+.header .auth #login {
+	margin-right: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.header .auth #register {
+	width: 100px;
+	border: solid;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.header .menu img {
+	margin-right: 50px;
+}
+
+
+#features::after {
+	content: url('images/icon-arrow-down.svg');
+	margin-left: 5px;
+}
+
+#company::after {
+	content: url('images/icon-arrow-down.svg');
+	margin-left: 5px;
+
+}
+
+/* END HEADER CSS */
+
+
+.main {
+	display: flex;
+	padding: 100px;
+	align-items: center;
+
+	/* margin-top: 50px; */
+}
+
+.main p {
+	color: hsl(0, 0%, 41%);
+}
+
+.main .content {
+	width: 700px;
+	margin-right: 50px;
+}
+
+.main .content .learn {
+	width: 120px;
+	border: solid;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	margin-top: 50px;
+	background-color: black;
+	
+}
+
+.main .content .learn a{
+	color: white;
+}
+
+.main .content .learn:hover {
+	background-color: white;
+	
+}
+
+.main .content .learn a:hover{
+	color: black;
+}
+
+.main .content .sponsor img {
+	margin-right: 50px;
+}
+
+.main .content .sponsor {
+	margin-top: 50px;
+}
+
+.main .content h1 {
+	font-weight: 700;
+	font-size: 80px;
+}
+
+.main .content p {
+	margin-top: 50px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.6;
+
+}
+
+.main .image img {
+	width: 350px;
+
+
+
+}
+
+
+/* breakPoint */
+
+
+/* ukuran tablet */
+@media screen and (max-width:576px) {
+	.header{
+		height:90px;
+	}
+
+	.header .menu li {
+		display:none;
+	}
+
+
+
+	.header .auth{
+		display: none;
+	}
+
+	
+
+	
+}
